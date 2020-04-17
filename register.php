@@ -13,8 +13,6 @@
 // Load the initialization file
 require_once "Init.php";
 
-var_dump(file_get_contents('php://input'));
-
 // Collect input data
 $email = $_POST['email'] ?? '';
 $username = $_POST['username'] ?? '';
