@@ -1,0 +1,275 @@
+/* 
+ * Dragon CSS file
+ */
+
+/* Lets do a universal reset */
+*, *::before, *::after
+{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+/* Body */
+body
+{
+ background-image: url("../img/dragon-3.jpg");
+ background-position: top;
+ background-size: cover;
+ background-attachment: fixed;
+ font-family: Tahoma, sans-serif;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dragon-container
+{
+ background-color: rgba(0, 0, 0, .7);
+ border-bottom: 5px solid rgb(0, 200, 200);
+ padding: 2rem;
+ height: 100vh;
+ color: #fff;
+}
+
+.clear-fix::before, .clear-fix::after
+{
+ content: "";
+ display: table;
+}
+
+.clear-fix::after
+{
+ clear: both;
+}
+
+.clear-fix
+{
+ zoom: 1;
+}
+
+.dragon-container div.dragon-main
+{
+ margin-top: 100px;
+}
+
+.dragon-container div.dragon-main div.dragon-main-text
+{
+ padding: 20px;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 1.5rem;
+ font-weight: bolder;
+ color: rgb(253, 229, 113);
+ font-family: monospace;
+}
+
+.dragon-container div.dragon-main img.dragon-main-img
+{
+ width: 100px;
+ height: 100px;
+ display: block;
+ margin: 0 auto;
+}
+
+.dragon-container .dragon-text
+{
+ font-weight: bold;
+ font-size: 1.5rem;
+}
+
+.dragon-container nav.dragon-nav ul.dragon-menu
+{
+ list-style: none;
+ color: #fff;
+ float: right;
+}
+
+.dragon-container nav.dragon-nav ul.dragon-menu i.material-icons
+{
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+ padding-left: 3rem;
+}
+
+.dragon-container nav.dragon-nav ul.dragon-menu i.material-icons:not(:last-child)
+{
+ color: rgb(0, 200, 200);
+}
+
+.dragon-container .dragon-menu
+{
+ font-weight: bold;
+ font-size: 1.5rem;
+}
+
+.dragon-sidebar-container
+{
+ /* background-color: rgb(80, 26, 28); */
+ background-color: rgba(80, 26, 28, .6);
+ padding: 20px;
+ max-width: 5%;
+ height: 100%;
+ color: #fff;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: -100;
+}
+
+/* Media queries */
+/* @media only screen and (min-width: 1000px)
+{
+    .dragon-container div.dragon-main img.dragon-main-img
+    {
+     width: 100px;
+     height: 100px;
+     display: block;
+     margin: 0 auto;
+     margin-top: 15%;
+    }
+} */
+
+footer div.dragon-footer
+{
+ background-color: rgba(0, 0, 0, .7);
+ border-top: 5px solid rgb(0, 200, 200);
+ color: #fff;
+}
+
+footer div.dragon-footer p.dragon-footer-text
+{
+ background-color: rgb(8, 21, 25);
+ color: rgb(0, 200, 200);
+ font-weight: bold;
+ font-family: monospace;
+ padding: 0.5rem;
+ text-align: center;
+}
+
+footer div.dragon-footer div.dragon-footer-row
+{
+ margin: 30px auto;
+ max-width: 100%;
+ padding: 30px;
+}
+
+footer div.dragon-footer div.dragon-footer-col
+{
+ padding: 10px;
+ width: calc((100% - 10%) / 3);
+ float: left;
+ margin: 0 auto;
+ align-items: center;
+}
+
+footer div.dragon-footer div.dragon-footer-col:last-child
+{
+ margin-left: 10%;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list
+{
+ list-style: none;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li
+{
+ font-weight: lighter;
+ background-color: rgb(8, 21, 25);
+ border-radius: 10px;
+ padding: 15px;
+ max-width: 100%;
+ margin-bottom: 10px;
+}
+
+footer div.dragon-footer .dragon-footer-row div.dragon-footer-col:last-child ul.dragon-footer-list li
+{
+ font-weight: normal;
+ background: none;
+ border-radius: 10px;
+ padding: 0;
+ max-width: 0;
+ margin-bottom: 10px;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li:hover
+{
+ background-color: rgb(14, 80, 6);
+ transform: translateY(-10%);
+ transition: all .3s;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li:nth-child(even)
+{
+ transform: translateX(15%);
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li:nth-child(even):hover
+{
+ transform: translate(15%, -10%);
+ transition: all .3s;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li a
+{
+ text-decoration: none;
+ color: #fff;
+ padding: 10px 0 10px 0;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li img
+{
+ width: 30px;
+ float: left;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li input[name="subscribe"]
+{
+ border: none;
+ background-color: rgba(84, 175, 32, 0.39);
+ padding: 15px;
+ border-radius: 10px;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li input[name="subscribe"]::placeholder
+{
+ color: rgb(253, 229, 113);
+ font-weight: bold;
+ text-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+ text-transform: uppercase;
+}
+
+footer div.dragon-footer div.dragon-footer-col ul.dragon-footer-list li button[type="submit"]
+{
+ border: none;
+ background-color: rgb(27, 134, 15);
+ padding: 15px;
+ border-radius: 10px;
+ color: #fff;
+ font-weight: bold;
+ text-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+ text-transform: uppercase;
+}
+
+footer div.dragon-footer div.dragon-footer-content
+{
+ padding: 1rem;
+ height: 50vh;
+}
+
+/* Footer social */
+footer div.dragon-footer div.dragon-social
+{
+ position: fixed;
+ right: 5%;
+ bottom: 10%;
+}
+
+footer div.dragon-footer div.dragon-social span.icon img
+{
+ width: 2.5rem;
+}
+
+footer div.dragon-footer div.dragon-social span.icon
+{
+ display: block;
+}
